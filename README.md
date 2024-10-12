@@ -19,6 +19,7 @@ This activity will give us the metadata about processed container which will tel
 ## ForEach Activity
 Lets suppose there are 5 directories present in processed container.
 This acivity will run for 5 times and under each iteration it will pull the data from respective directory and push it to a country_table in Azure SQL Database.
+It will check whether respective country_table exists or not and then create a new table if table doesn't exist.
 ## ForEach Activity2
 This activity will basically ensure that all the directories previously made under processed container gets deleted.
 
