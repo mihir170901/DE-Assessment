@@ -1,4 +1,9 @@
 # DE-Assessment
+Azure Services used:
+- Azure Data Lake Storage(ADLS)
+- Azure Data Factory(ADF)
+- Azure Databricks
+- Azure SQL Database
 
 ## Containers in ADLS:
 - staging - location where sourcing team will place the data file in csv format
