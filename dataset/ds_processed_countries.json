@@ -1,0 +1,73 @@
+{
+	"name": "ds_processed_countries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_incubyteadls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "processed"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Type",
+				"type": "UTF8"
+			},
+			{
+				"name": "Customer_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "Customer_Id",
+				"type": "UTF8"
+			},
+			{
+				"name": "Open_Date",
+				"type": "DATE"
+			},
+			{
+				"name": "Last_Consulted_Date",
+				"type": "DATE"
+			},
+			{
+				"name": "Vaccination_Id",
+				"type": "UTF8"
+			},
+			{
+				"name": "Dr_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "State",
+				"type": "UTF8"
+			},
+			{
+				"name": "Country",
+				"type": "UTF8"
+			},
+			{
+				"name": "DOB",
+				"type": "DATE"
+			},
+			{
+				"name": "Is_Active",
+				"type": "UTF8"
+			},
+			{
+				"name": "age",
+				"type": "INT64"
+			},
+			{
+				"name": "days_since_last_consulted",
+				"type": "INT32"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

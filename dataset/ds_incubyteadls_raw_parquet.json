@@ -1,0 +1,20 @@
+{
+	"name": "ds_incubyteadls_raw_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_incubyteadls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

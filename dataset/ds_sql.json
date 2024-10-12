@@ -1,0 +1,80 @@
+{
+	"name": "ds_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Type",
+				"type": "char"
+			},
+			{
+				"name": "Customer_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Customer_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Open_Date",
+				"type": "date"
+			},
+			{
+				"name": "Last_Consulted_Date",
+				"type": "date"
+			},
+			{
+				"name": "Vaccination_ID",
+				"type": "char"
+			},
+			{
+				"name": "Dr_Name",
+				"type": "char"
+			},
+			{
+				"name": "State",
+				"type": "char"
+			},
+			{
+				"name": "Country",
+				"type": "char"
+			},
+			{
+				"name": "DOB",
+				"type": "date"
+			},
+			{
+				"name": "Is_Active",
+				"type": "char"
+			},
+			{
+				"name": "age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "days_since_last_consulted",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "incubyte-adf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3e407beb-6523-4550-af5f-d31c9c457fd9",
+		"tenantId": "bd54689d-f482-4eae-ba2f-72a4ad6bf8f3"
+	}
+}
