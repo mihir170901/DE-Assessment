@@ -5,7 +5,7 @@ Azure Services used:
 - Azure Databricks
 - Azure SQL Database
 
-## Containers in ADLS:
+Containers in ADLS:
 - staging - location where sourcing team will place the data file in csv format
 - raw - location where files will be fetched from staging container
 - processed - location where processed data will be kept
